@@ -6,12 +6,12 @@ const Page = props => {
     
     if (isNaN(param)) {
         return (
-            <h2>The word is: {param}</h2>
+            <h2>The word of the day is: {param}</h2>
         )
     }
     else {
         return (
-            <h2>The number is {param}</h2>
+            <h2>The number of the day is {param}</h2>
         )
     }
 };

@@ -10,7 +10,7 @@ const Color = props => {
     };
     
     return (
-        <h2 style={style}>The word is: {props.word}</h2>
+        <h2 style={style}>The word of the day is: {props.word}</h2>
     )
 };
 
