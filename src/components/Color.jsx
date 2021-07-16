@@ -2,8 +2,8 @@ import React from 'react';
 
 const Color = props => {
     
-    const {color1, color2} = props; // Destructure the path variables
-
+    const {color1, color2} = props; 
+    // Destructure the path variables
     const style = {
         "color": `${color1}`,
         "backgroundColor": `${color2}`
