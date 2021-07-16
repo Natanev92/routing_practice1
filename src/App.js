@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
+import {Router} from '@reach/router';
+import Color from './components/Color';
+import Page from './components/Page';
+import Home from './components/Home';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Home path='/home'/>
+        <Page path='/:word'/>
+        <Color path='/:word/:color1/:color2' />
+      </Router>
     </div>
   );
 }
 
 export default App;
+
+//npx create-react-app reactjs-app --scripts-version 1.1.5
+//npx create-react-app@3.4.1 my-app
